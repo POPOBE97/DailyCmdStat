@@ -1,0 +1,109 @@
+
+The default interactive shell is now zsh.
+To update your account to use zsh, please run `chsh -s /bin/zsh`.
+For more details, please visit https://support.apple.com/kb/HT208050.
+[?1034hbash-3.2$ sourve[K[Kce /etcb[K/bashrc
+]7;file://Ruiyaos-MacBook-Pro.local/Users/ruiyaoRuiyaos-MacBook-Pro:~ ruiyao$ source ./[Kbash_profile 
+]7;file://Ruiyaos-MacBook-Pro.local/Users/ruiyaoRuiyaos-MacBook-Pro:~ ruiyao$ [H[2JRuiyaos-MacBook-Pro:~ ruiyao$ ssh web@www[K[K[Kluoruiyao.cn
+web@luoruiyao.cn's password: 
+Warning: untrusted X11 forwarding setup failed: xauth key data not generated
+Welcome to Ubuntu 18.04.3 LTS (GNU/Linux 4.15.0-66-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+ * Multipass 1.0 is out! Get Ubuntu VMs on demand on your Linux, Windows or
+   Mac. Supports cloud-init for fast, local, cloud devops simulation.
+
+     https://multipass.run/
+
+ * Latest Kubernetes 1.18 beta is now available for your laptop, NUC, cloud
+   instance or Raspberry Pi, with automatic updates to the final GA release.
+
+     sudo snap install microk8s --channel=1.18/beta --classic
+
+ * Canonical Livepatch is available for installation.
+   - Reduce system reboots and improve kernel security. Activate at:
+     https://ubuntu.com/livepatch
+
+Welcome to Alibaba Cloud Elastic Compute Service !
+
+Last login: Thu Mar  5 06:55:10 2020 from 93.144.161.208
+]0;web@iZ28a3esszyZ: ~[01;32mweb@iZ28a3esszyZ[00m:[01;34m~[00m$ [H[2J]0;web@iZ28a3esszyZ: ~[01;32mweb@iZ28a3esszyZ[00m:[01;34m~[00m$ ls
+[0m[01;34mbackup[0m  [01;34mhtml[0m  [01;36mnginx.conf[0m  [01;36mphp-fpm.conf[0m  [01;36mphp.ini[0m  shadowserver.json
+]0;web@iZ28a3esszyZ: ~[01;32mweb@iZ28a3esszyZ[00m:[01;34m~[00m$ ls -a
+[0m[01;34m.[0m       .bash_history  [01;34m.cache[0m  .mysql_history  [01;36mphp.ini[0m            [01;34m.ssh[0m
+[01;34m..[0m      .bash_logout   [01;34m.gnupg[0m  [01;36mnginx.conf[0m      .profile           .viminfo
+[01;34mbackup[0m  .bashrc        [01;34mhtml[0m    [01;36mphp-fpm.conf[0m    shadowserver.json
+]0;web@iZ28a3esszyZ: ~[01;32mweb@iZ28a3esszyZ[00m:[01;34m~[00m$ gr[K[Kcat html/m[K[K | grep 1[Kgepl[K[K[K[Khelp
+cat: html: Is a directory
+]0;web@iZ28a3esszyZ: ~[01;32mweb@iZ28a3esszyZ[00m:[01;34m~[00m$ cart [K[K[Kt .bash_history | grep  el[K[K[Khelp
+]0;web@iZ28a3esszyZ: ~[01;32mweb@iZ28a3esszyZ[00m:[01;34m~[00m$ cat .bash_history | grep help[K[K[K[K[K;s[K[K ls
+[01;31m[Kls[m[K
+[01;31m[Kls[m[K
+[01;31m[Kls[m[K
+[01;31m[Kls[m[K -l
+[01;31m[Kls[m[K
+[01;31m[Kls[m[K
+[01;31m[Kls[m[K -l
+[01;31m[Kls[m[K -l
+[01;31m[Kls[m[K
+[01;31m[Kls[m[K
+[01;31m[Kls[m[K -l
+[01;31m[Kls[m[K
+[01;31m[Kls[m[K
+[01;31m[Kls[m[K -l
+[01;31m[Kls[m[K -l
+[01;31m[Kls[m[K
+[01;31m[Kls[m[K
+[01;31m[Kls[m[K
+[01;31m[Kls[m[K -l
+[01;31m[Kls[m[K
+[01;31m[Kls[m[K
+[01;31m[Kls[m[K
+[01;31m[Kls[m[K -l
+[01;31m[Kls[m[K
+[01;31m[Kls[m[K
+[01;31m[Kls[m[K
+[01;31m[Kls[m[K
+[01;31m[Kls[m[K
+[01;31m[Kls[m[K
+[01;31m[Kls[m[K
+[01;31m[Kls[m[K -l
+[01;31m[Kls[m[K
+[01;31m[Kls[m[K -l
+[01;31m[Kls[m[K
+[01;31m[Kls[m[K
+[01;31m[Kls[m[K -l
+[01;31m[Kls[m[K
+[01;31m[Kls[m[K -l
+[01;31m[Kls[m[K
+[01;31m[Kls[m[K -l
+[01;31m[Kls[m[K
+[01;31m[Kls[m[K
+[01;31m[Kls[m[K
+[01;31m[Kls[m[K
+[01;31m[Kls[m[K -l
+[01;31m[Kls[m[K
+[01;31m[Kls[m[K -l
+[01;31m[Kls[m[K
+[01;31m[Kls[m[K
+[01;31m[Kls[m[K
+[01;31m[Kls[m[K
+[01;31m[Kls[m[K
+[01;31m[Kls[m[K
+[01;31m[Kls[m[K
+[01;31m[Kls[m[K
+[01;31m[Kls[m[K
+[01;31m[Kls[m[K
+[01;31m[Kls[m[K
+[01;31m[Kls[m[K
+[01;31m[Kls[m[K -a
+]0;web@iZ28a3esszyZ: ~[01;32mweb@iZ28a3esszyZ[00m:[01;34m~[00m$ logout
+Connection to luoruiyao.cn closed.
+]7;file://Ruiyaos-MacBook-Pro.local/Users/ruiyaoRuiyaos-MacBook-Pro:~ ruiyao$ exit
+Saving session...
+...copying shared history...
+...saving history...truncating history files...
+...completed.
