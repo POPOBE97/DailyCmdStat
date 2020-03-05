@@ -32,4 +32,4 @@ except PermissionError:
 print("Install to %s"%(install_path))
 
 copyfile('./CmdStat.py', install_path+'/CmdStat.py')
-os.chmod(install_path+'/CmdStat', stat.S_IXUSR)
+os.chmod(install_path+'/CmdStat.py', stat.S_IXUSR)
