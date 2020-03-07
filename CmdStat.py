@@ -28,6 +28,6 @@ for i in range(len(lines)-1, -1, -1):
 
 r = requests.post(URL, json={"content": CMDS})
 
-f = open(HISTFILE, 'r+')
+f = open(HISTFILE, 'a+')
 f.write('%s %s'%(sys.argv[0], sys.argv[1]))
 f.close()
