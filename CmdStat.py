@@ -6,7 +6,7 @@ import requests
 HISTFILE = sys.argv[1]
 URL      = "https://ss.luoruiyao.cn/api/upload_cmd_stat.php"
 REG = r"^[\s]*([^\s]*).*$"
-SEL = r"^.*CmdStat(.py)?\s[\S]*$"
+SEL = r"^.+(CmdStat.py)[^\n][\S]*$"
 
 f = open(HISTFILE, 'r')
 lines = f.readlines()
@@ -15,16 +15,18 @@ f.close()
 CMDS  = {}
 for i in range(len(lines)-1, -1, -1):
     line = lines[i]
-    if re.search(SEL,line):
+    if len(line):
         break
-    elif len(line):
+    elif re.search(SEL,line):
+        break
+    else:
         cmds  = re.findall(REG, line)
         for cmd in cmds:
+            c = cmd.split('/')[-1]
             try:
-                CMDS[cmd] += 1
+                CMDS[c] += 1
             except KeyError:
-                CMDS[cmd] = 1
-    else: continue
+                CMDS[c] = 1
 
 r = requests.post(URL, json={"content": CMDS})
 
