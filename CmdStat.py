@@ -15,7 +15,7 @@ f.close()
 CMDS  = {}
 for i in range(len(lines)-1, -1, -1):
     line = lines[i]
-    if len(line):
+    if len(line) == 0:
         break
     elif re.search(SEL,line):
         break
