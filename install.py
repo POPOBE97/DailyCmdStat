@@ -25,11 +25,14 @@ except FileExistsError:
     print("Exiting...")
     exit()
 except PermissionError:
-    print("No Permission to %s"%(install_path))
-    print("Exiting...")
-    exit()
+    print("Raising permission to write in %s"%(install_path))
+    os.system("sudo mkdir %s"%(install_path))
 
 print("Install to %s"%(install_path))
-copyfile('./CmdStat.py', install_path+'/CmdStat.py')
-os.chmod(install_path+'/CmdStat.py', 0o755)
+try:
+    copyfile('./CmdStat.py', install_path+'/CmdStat.py')
+except PermissionError:
+    os.system("sudo cp ./CmdStat.py %s"%(install_path+'/CmdStat.py'))
+    os.system("sudo chmod 755 %s"%(install_path+'/CmdStat.py'))
+
 print("Finished")

@@ -8,7 +8,7 @@ URL      = "https://ss.luoruiyao.cn/api/upload_cmd_stat.php"
 REG = r"^[\s]*([^\s]*).*$"
 SEL = r"^.+(CmdStat.py)[^\n][\S]*$"
 
-f = open(HISTFILE, 'r')
+f = open(HISTFILE, 'r', errors='ignore')
 lines = f.readlines()
 f.close()
 
